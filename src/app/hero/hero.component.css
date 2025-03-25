@@ -1,0 +1,17 @@
+.background {
+    background-image: url('../../../public/bg-top.png');
+    /* background-color: #03135b; */
+    background-size: cover;
+}
+
+.text-heading {
+    font-size: 65px;
+    font-weight: 800;
+    line-height: 70px;
+}
+
+.text-sub-heading {
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 600;
+}

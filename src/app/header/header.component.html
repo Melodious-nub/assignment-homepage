@@ -1,0 +1,30 @@
+<header id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+    <div class="container mx-auto flex justify-between items-center px-4 py-4">
+        <!-- Logo -->
+        <img src="logo_eno.png" alt="logo">
+
+        <!-- Mobile Menu Button -->
+        <button class="lg:hidden text-white" (click)="toggleMenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+        </button>
+
+        <!-- Navigation -->
+        <nav [ngClass]="{'hidden': !menuOpen, 'block': menuOpen}"
+            class="lg:flex lg:items-center lg:space-x-6 absolute lg:static top-16 left-0 w-full lg:w-auto mt-4 bg-gray-900 lg:bg-transparent p-4 lg:p-0">
+            <ul class="lg:flex space-y-4 lg:space-y-0 lg:space-x-6 text-center">
+                <li><a type="button" routerLink="" routerLinkActive="active" class="text-white block">Home</a></li>
+                <li><a type="button" class="text-white block">Service</a></li>
+                <li><a type="button" class="text-white block">Combo Sales</a></li>
+                <li><a type="button" class="text-white block">Portfolio</a></li>
+                <li><a type="button" class="text-white block">About Us</a></li>
+                <li><a type="button" class="text-white block">Blogs</a></li>
+            </ul>
+        </nav>
+
+        <!-- CTA Button (Hidden in Mobile) -->
+        <button class="hidden lg:block bg-org px-4 py-2 rounded-md text-white">See Pricing</button>
+    </div>
+</header>
