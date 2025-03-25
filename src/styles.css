@@ -8,4 +8,30 @@
 
 .bg-org {
     background-color: #FF693B;
+    border-radius: 4px;
+}
+
+.bg-org:hover {
+    background-color: #D75B32;
+    /* Darker shade */
+}
+
+.bg-trans {
+    background-color: transparent;
+    border: 2px solid white;
+    /* Add your desired border color */
+}
+
+.bg-trans:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    /* Change border color on hover */
+    color: white;
+    /* Optional: Change text color on hover */
+}
+
+.border-end {
+    border-right: 1px;
+    border-color: white;
+    height: 48px;
+    margin-top: 4px;
 }
